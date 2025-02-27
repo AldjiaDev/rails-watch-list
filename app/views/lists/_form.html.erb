@@ -1,0 +1,11 @@
+<%= form_with model: list, local: true do |f| %>
+  <div class="form-group">
+    <%= f.label :name, "Nom de la liste" %>
+    <%= f.text_field :name, class: "form-control", required: true %>
+  </div>
+
+  <div class="mt-3">
+    <%= f.submit "Enregistrer", class: "btn btn-primary" %>
+  </div>
+<% end %>
+

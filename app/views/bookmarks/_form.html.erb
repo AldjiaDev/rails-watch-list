@@ -1,0 +1,13 @@
+<%= form_with model: [list, bookmark] do |f| %>
+  <div class="form-group">
+    <%= f.label :movie_id, "Choisir un film" %>
+    <%= f.collection_select :movie_id, Movie.all, :id, :title, prompt: "Sélectionner un film", class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :comment, "Commentaire" %>
+    <%= f.text_field :comment, class: "form-control" %>
+  </div>
+
+  <%= f.submit "Ajouter", class: "btn btn-primary" %>
+<% end %>
