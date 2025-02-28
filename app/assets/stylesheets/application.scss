@@ -10,3 +10,29 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.btn-blue {
+  background: #4b5e38;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+
+.btn-blue:hover {
+  background: #0056b3;
+}

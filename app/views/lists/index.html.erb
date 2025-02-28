@@ -1,8 +1,21 @@
+<div class="container text-center">
+  <!-- Image principale -->
+  <%= image_tag "pexels-pixabay-33129.jpg", alt: "Belle image", class: "hero-image" %>
+
+  <!-- Contenu -->
+  <div class="content">
+    <h1>Bienvenue sur WatchList 🎬</h1>
+    <p>Gérez et découvrez de nouveaux films et séries.</p>
+    <%= link_to "Voir mes listes", root_path, class: "btn-blue" %>
+  </div>
+</div>
+
+
 <h1>Mes Listes de Films</h1>
 
 <ul>
   <% @lists.each do |list| %>
-    <li>
+    <li class="marker-none">
       <%= link_to list.name, list_path(list) %>
     </li>
   <% end %>
